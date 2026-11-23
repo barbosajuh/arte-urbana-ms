@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte de Rua no Interior de MS | Projeto IFMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="cabecalho">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="tag-ifms">IFMS • Nova Andradina</span>
+                <h1>Muros de MS</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#sobre">O Projeto</a></li>
+                    <li><a href="#formas">Manifestações</a></li>
+                    <li><a href="#galeria">Portfólio & Artistas</a></li>
+                    <li><a href="#conceitos">Citações & Teoria</a></li>
+                    <li><a href="#referencias">Referências</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="container">
+            <h2>Valorização Cultural da Arte de Rua no Interior Sul-Mato-Grossense</h2>
+            <p>Um espaço digital para dar visibilidade ao grafite, ao muralismo e aos artistas que ocupam, ressignificam e transformam os espaços públicos de Mato Grosso do Sul.</p>
+            <a href="#galeria" class="btn-principal">Explorar Portfólio</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre o Projeto -->
+    <section id="sobre" class="secao">
+        <div class="container">
+            <h3 class="titulo-secao">Por que falar de Arte de Rua no Interior?</h3>
+            <p class="descricao-central">No interior de Mato Grosso do Sul, incluindo municípios como Nova Andradina, a produção artística urbana existe, mas muitas vezes carece de espaços de registro e divulgação, o que contribui para sua invisibilização social e cultural.</p>
+            
+            <div class="grid-sobre">
+                <div class="card-info">
+                    <h4>Invisibilização no Interior</h4>
+                    <p>Enquanto grandes capitais possuem circuitos turísticos e editais consolidados, manifestações artísticas no interior frequentemente enfrentam falta de fomento, pouca cobertura midiática e estigmas sociais que reduzem o acesso da população às obras.</p>
+                </div>
+                <div class="card-info">
+                    <h4>Espaço Público Vivo</h4>
+                    <p>Muros, praças, pistas de skate e escadarias não são apenas estruturas de concreto: quando ocupados pela arte, tornam-se locais de memória, diálogo comunitário e democratização do acesso à cultura.</p>
+                </div>
+                <div class="card-info">
+                    <h4>Nova Andradina em Foco</h4>
+                    <p>Iniciativas locais, encontros culturais nas praças e debates sobre o reconhecimento legal do grafite mostram que a juventude e os artistas da cidade buscam legitimidade e espaço para expressão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova Seção: Formas de Arte de Rua (Atende ao 1º Objetivo Específico) -->
+    <section id="formas" class="secao fundo-cinza">
+        <div class="container">
+            <h3 class="titulo-secao">Formas de Manifestação Urbana</h3>
+            <p class="descricao-central">A arte urbana reúne diferentes linguagens visuais que interagem diretamente com a arquitetura e o cotidiano das cidades.</p>
+            
+            <div class="grid-formas">
+                <div class="card-forma">
+                    <span class="numero-forma">01</span>
+                    <h4>Grafite</h4>
+                    <p>Expressão artística feita geralmente com tinta spray em muros e espaços públicos, combinando letras estilizadas (throw-ups, wildstyle) e personagens que comunicam identidade e crítica social.</p>
+                </div>
+                <div class="card-forma">
+                    <span class="numero-forma">02</span>
+                    <h4>Muralismo</h4>
+                    <p>Pinturas de grande escala aplicadas em fachadas de prédios, escolas e muros comunitários, frequentemente retratando a história local, a fauna, a flora e o cotidiano regional.</p>
+                </div>
+                <div class="card-forma">
+                    <span class="numero-forma">03</span>
+                    <h4>Estêncil e Lambe-Lambe</h4>
+                    <p>Técnicas ágeis de reprodução visual: o estêncil utiliza moldes vazados para aplicar tinta, enquanto o lambe-lambe consiste na colagem de cartazes artísticos e poéticos pelo espaço urbano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio / Galeria com Filtro JS -->
+    <section id="galeria" class="secao fundo-escuro">
+        <div class="container">
+            <h3 class="titulo-secao">Portfólio: Artistas e Intervenções em MS</h3>
+            <p class="subtitulo-secao">Filtre por município ou região para conhecer os artistas e projetos mapeados pelo grupo.</p>
+
+            <!-- Botões de Filtro (Controlados pelo script.js) -->
+            <div class="filtros">
+                <button class="btn-filtro ativo" data-regiao="todos">Todos</button>
+                <button class="btn-filtro" data-regiao="nova-andradina">Nova Andradina</button>
+                <button class="btn-filtro" data-regiao="dourados">Dourados</button>
+                <button class="btn-filtro" data-regiao="bodoquena">Bodoquena</button>
+                <button class="btn-filtro" data-regiao="campo-grande">Campo Grande</button>
+            </div>
+
+            <!-- Grid onde o JavaScript vai renderizar os cards -->
+            <div id="grid-artistas" class="grid-galeria"></div>
+        </div>
+    </section>
+
+    <!-- Seção Conceitos e Citações de Artigos (Baseada no Referencial Teórico) -->
+    <section id="conceitos" class="secao">
+        <div class="container">
+            <h3 class="titulo-secao">Fundamentação Teórica e Citações</h3>
+            <p class="descricao-central">O que dizem os pesquisadores sobre espaço urbano, reconhecimento social e a arte de rua em Mato Grosso do Sul.</p>
+
+            <div class="lista-conceitos">
+                <article class="conceito-item">
+                    <h4>Disputas por Reconhecimento</h4>
+                    <blockquote class="citacao-bloco">
+                        "As práticas de arte de rua se relacionam com formas particulares de ocupar a cidade e com disputas por reconhecimento, sendo algumas legitimadas como arte e outras associadas à ilegalidade ou à desordem."
+                        <footer>— Baseado em <strong>Diógenes e Pereira (2020)</strong></footer>
+                    </blockquote>
+                    <p>Essa reflexão mostra por que é fundamental analisar o contexto de cada intervenção, evitando preconceitos que invisibilizam artistas locais.</p>
+                </article>
+
+                <article class="conceito-item">
+                    <h4>A Produção Social do Espaço Urbano</h4>
+                    <blockquote class="citacao-bloco">
+                        "O espaço urbano não é apenas um suporte físico de ruas e edifícios; ele é produzido pelas relações sociais, práticas cotidianas e significados atribuídos pelos grupos que o habitam."
+                        <footer>— Baseado em <strong>Henri Lefebvre (2011)</strong></footer>
+                    </blockquote>
+                    <p>Ao pintar um muro ou revitalizar uma praça, os artistas transformam a relação dos moradores com a própria cidade.</p>
+                </article>
+
+                <article class="conceito-item">
+                    <h4>Identidade Cultural e Pertencimento</h4>
+                    <blockquote class="citacao-bloco">
+                        "A identidade cultural é construída por meio de representações, memórias e experiências compartilhadas que marcam pertencimentos e diferenças."
+                        <footer>— Baseado em <strong>Silva, Hall e Woodward (2014)</strong></footer>
+                    </blockquote>
+                    <p>No interior sul-mato-grossense, os murais resgatam símbolos regionais — como a natureza, os povos originários e a cultura juvenil — fortalecendo a identidade local.</p>
+                </article>
+
+                <article class="conceito-item">
+                    <h4>A Rua como Lugar de Ocupação em MS</h4>
+                    <blockquote class="citacao-bloco">
+                        "A rua funciona como espaço de encontro, sociabilidade e resistência estética, onde os artistas sul-mato-grossenses constroem redes de colaboração e visibilidade."
+                        <footer>— Baseado em <strong>Bogarim e Passamani (2023)</strong></footer>
+                    </blockquote>
+                    <p>Mesmo diante da falta de incentivo institucional, coletivos e artistas de MS utilizam os muros para dialogar diretamente com o público.</p>
+                </article>
+
+                <article class="conceito-item">
+                    <h4>Atmosferas Urbanas e Arte Pública</h4>
+                    <blockquote class="citacao-bloco">
+                        "O grafite atua na criação de novas atmosferas urbanas, ressignificando paisagens cinzentas e abrindo nichos estéticos acessíveis fora dos museus e galerias tradicionais."
+                        <footer>— Baseado em <strong>Victor Macaulin (2020)</strong></footer>
+                    </blockquote>
+                    <p>Pesquisa desenvolvida na UFMS que evidencia o papel do grafite como arte pública democrática em Mato Grosso do Sul.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Referências Bibliográficas -->
+    <section id="referencias" class="secao fundo-cinza">
+        <div class="container">
+            <h3 class="titulo-secao">Referências Bibliográficas</h3>
+            <ul class="lista-referencias">
+                <li><strong>BOGARIM, Beatriz Silva; PASSAMANI, Guilherme Rodrigues.</strong> “A rua é o lugar disso tudo”: arte de rua e modos de ocupação em Campo Grande - MS. <em>Proa: Revista de Antropologia e Arte</em>, Campinas, v. 13, p. 1-7, 2023. DOI: https://doi.org/10.20396/proa.v13i00.16718.</li>
+                <li><strong>DIÓGENES, Glória; PEREIRA, Alexandre Barbosa.</strong> Rasuras, ruídos e tensões no espaço público no Brasil: por onde anda a arte de rua brasileira? <em>Dilemas: Revista de Estudos de Conflito e Controle Social</em>, Rio de Janeiro, v. 13, n. 3, p. 759-779, 2020. DOI: https://doi.org/10.17648/dilemas.v13n3.25206.</li>
+                <li><strong>LEFEBVRE, Henri.</strong> <em>O direito à cidade</em>. São Paulo: Centauro, 2011.</li>
+                <li><strong>MACAULIN, Victor.</strong> <em>Atmosferas Urbanas: grafite, arte pública, nichos estéticos</em>. Trabalho de Conclusão de Curso (Bacharelado em Artes Visuais) – Universidade Federal de Mato Grosso do Sul (UFMS), Campo Grande, 2020.</li>
+                <li><strong>SILVA, Tomaz Tadeu da (org.); HALL, Stuart; WOODWARD, Kathryn.</strong> <em>Identidade e diferença: a perspectiva dos estudos culturais</em>. 14. ed. Petrópolis, RJ: Vozes, 2014.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Modal para Detalhes do Artista -->
+    <div id="modal-artista" class="modal">
+        <div class="modal-conteudo">
+            <span id="fechar-modal" class="fechar">&times;</span>
+            <img id="modal-img" src="" alt="Obra do artista">
+            <div class="modal-texto">
+                <span id="modal-cidade" class="badge"></span>
+                <h3 id="modal-nome"></h3>
+                <div id="modal-thumbs" class="modal-galeria-thumbs"></div>
+                <p id="modal-descricao"></p>
+                <p class="modal-fonte"><strong>Fonte / Registro:</strong> <span id="modal-fonte"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>Instituto Federal de Mato Grosso do Sul (IFMS) - Campus Nova Andradina</strong></p>
+            <p>Curso Técnico em Informática (4º Semestre B) • 2026</p>
+            <p>Autores: Ana Clara Forti Garcia, Luiz Felipe Freitas Ribeiro e Julia Barbosa Magalhães</p>
+            <p>Orientação: Profª. Dra. Patrícia Fernanda Freitas e Alexandre</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
