@@ -1,4 +1,4 @@
-// Banco de dados dos artistas e manifestações de MS com os nomes exatos da pasta img/
+// 
 const listaArtistas = [
     {
         id: 1,
