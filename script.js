@@ -34,7 +34,7 @@ const listaArtistas = [
         resumo: "Murais e pinturas temáticas que dialogam com a fauna e a identidade sul-mato-grossense.",
         descricao: "Pintura de onça em portão metálico com destaque para os olhos verdes e cores marcantes, integrando arte visual e identidade regional ao espaço público.",
         imagens: [
-            "img/images (3).jpeg"
+            "img/victor-macaulin.jpg"
         ],
         fonte: "Registro fotográfico enviado pelo grupo • Arte de Rua em MS"
     },
@@ -46,7 +46,7 @@ const listaArtistas = [
         resumo: "Artista visual, grafiteiro e pesquisador da arte pública em Mato Grosso do Sul.",
         descricao: "Artista visual, grafiteiro e pesquisador da arte pública em Mato Grosso do Sul, atuando em grandes painéis murais e na reflexão acadêmica sobre a presença da arte urbana na cidade.",
         imagens: [
-            "img/victor-macaulin.webp"
+            "img/imagens (3).jpeg"
         ],
         fonte: "Registro fotográfico enviado pelo grupo • Arte Pública em MS"
     }
